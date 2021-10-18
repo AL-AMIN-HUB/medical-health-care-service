@@ -60,7 +60,7 @@ const ServicePro = () => {
               <Card.Title className="fs-4">Gynecological Clinic</Card.Title>
               <Card.Text className="py-4">
                 The Gynecology Clinic offers care for females from infancy through menopause and annual exams to complex problems including Fibroids,
-                Gynecology and Young Adult Gynecology.
+                Gynecology and Young Adult...
               </Card.Text>
               <Link to="/pricing">
                 {" "}
@@ -79,15 +79,14 @@ const ServicePro = () => {
           <Card className="h-100 border-0">
             <Card.Img
               className="img-fluid d-block mx-auto py-4"
-              style={{ width: "80px", borderBottom: "1px solid #E12454" }}
+              style={{ width: "90px", borderBottom: "1px solid #E12454" }}
               variant="top"
               src={icon3}
             />
             <Card.Body className="text-center">
               <Card.Title className="fs-4">Precise Diagnosis</Card.Title>
               <Card.Text className="py-4">
-                Discover integrated approaches to improve diagnostic accuracy and get actionable insights. See how diagnostic challenges can be
-                resolved by expanding precision medicine.
+                Discover integrated approaches to improve diagnostic accuracy and get actionable insights. See how diagnostic challenges can
               </Card.Text>
               <Link to="/pricing">
                 {" "}
