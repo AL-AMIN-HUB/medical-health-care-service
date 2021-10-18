@@ -41,3 +41,16 @@
 .simple-white-bg {
   background-color: #e8e8e8;
 }
+
+.work-bg {
+  background-color: #f1f1f1;
+}
+
+.work-title:hover {
+  color: #e12555;
+}
+
+.work-card {
+  border-bottom: 3px solid #e12555;
+  border-radius: 5px;
+}
