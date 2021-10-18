@@ -1,0 +1,17 @@
+.second-col {
+  margin-top: 15%;
+}
+
+.second-col h3 {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 668px) {
+  .second-col {
+    margin-top: 0%;
+  }
+
+  .second-col h3 {
+    font-size: 20px;
+  }
+}

@@ -2,6 +2,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import banner1 from "../../images/banner1.jpg";
 import banner2 from "../../images/banner2.jpg";
 import banner3 from "../../images/banner3.jpg";
@@ -21,13 +22,16 @@ const Banner = () => {
             <p>
               Pleasure, but because those who do know how to pursue <br /> pleasure rationally extremely painful.
             </p>
-            <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill position-relative">
-              Learn More{" "}
-              <span>
-                {" "}
-                <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
-              </span>{" "}
-            </button>
+            <Link to="/about">
+              {" "}
+              <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill btn-hover">
+                Learn More{" "}
+                <span>
+                  {" "}
+                  <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
+                </span>{" "}
+              </button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,13 +45,16 @@ const Banner = () => {
             <p>
               Pleasure, but because those who do know how to pursue <br /> pleasure rationally extremely painful.
             </p>
-            <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill position-relative">
-              Learn More{" "}
-              <span>
-                {" "}
-                <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
-              </span>{" "}
-            </button>
+            <Link to="/about">
+              {" "}
+              <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill btn-hover">
+                Learn More{" "}
+                <span>
+                  {" "}
+                  <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
+                </span>{" "}
+              </button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -61,13 +68,16 @@ const Banner = () => {
             <p>
               Pleasure, but because those who do know how to pursue <br /> pleasure rationally extremely painful.
             </p>
-            <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill position-relative">
-              Learn More{" "}
-              <span>
-                {" "}
-                <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
-              </span>{" "}
-            </button>
+            <Link to="/about">
+              {" "}
+              <button className="btn button-active-color text-white fs-4 py-2 px-4  rounded-pill btn-hover">
+                Learn More{" "}
+                <span>
+                  {" "}
+                  <FontAwesomeIcon icon={faAngleDoubleRight} />{" "}
+                </span>{" "}
+              </button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

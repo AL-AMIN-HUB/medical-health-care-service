@@ -18,6 +18,9 @@
   text-align: left;
   margin-bottom: 16rem;
 }
+.btn-hover:hover {
+  background-color: #233746;
+}
 
 /* responsive */
 @media only screen and (max-width: 668px) {
