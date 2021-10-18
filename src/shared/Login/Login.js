@@ -41,7 +41,7 @@ const Login = () => {
               Email:
             </Form.Label>
             <Col sm="9">
-              <Form.Control onChange={handleEmail} placeholder="Enter your email" />
+              <Form.Control required onChange={handleEmail} placeholder="Enter your email" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -49,7 +49,7 @@ const Login = () => {
               Password
             </Form.Label>
             <Col sm="9">
-              <Form.Control onChange={handlePassword} type="password" placeholder="Password" />
+              <Form.Control required onChange={handlePassword} type="password" placeholder="Password" />
             </Col>
           </Form.Group>
 

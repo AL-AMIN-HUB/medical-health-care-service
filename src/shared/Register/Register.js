@@ -40,7 +40,7 @@ const Register = () => {
               Name:
             </Form.Label>
             <Col sm="9">
-              <Form.Control onBlur={handleName} placeholder="Type Your Name" />
+              <Form.Control required  onBlur={handleName} placeholder="Type Your Name" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
@@ -48,7 +48,7 @@ const Register = () => {
               Email:
             </Form.Label>
             <Col sm="9">
-              <Form.Control onChange={handleEmail} placeholder="Enter your email" />
+              <Form.Control  required onChange={handleEmail} placeholder="Enter your email" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -56,7 +56,7 @@ const Register = () => {
               Password
             </Form.Label>
             <Col sm="9">
-              <Form.Control onChange={handlePassword} type="password" placeholder="Password" />
+              <Form.Control required onChange={handlePassword} type="password" placeholder="Password" />
             </Col>
           </Form.Group>
 
