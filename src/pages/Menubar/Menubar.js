@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import useFirebase from "../../hooks/useFirebase";
 import logo from "../../images/logo.png";
 
 const Menubar = () => {
+  const { user, logOut } = useFirebase();
   return (
     <>
       <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
@@ -31,11 +33,25 @@ const Menubar = () => {
               </NavLink>
             </Nav>
             <Nav>
-              <NavLink to="/login">
-                <button className="btn btn-outline-dark px-4 fs-5  ms-2">Login</button>
-              </NavLink>
-              <NavLink to="/register">
-                <button className="btn btn-danger px-4 fs-5 ms-2">Register</button>
+              {user?.email ? (
+                <NavLink to="/login">
+                  <button onClick={logOut} className="btn btn-outline-dark px-4 fs-5  ms-2">
+                    Logout
+                  </button>
+                </NavLink>
+              ) : (
+                <div>
+                  <NavLink to="/login">
+                    <button className="btn btn-outline-dark px-4 fs-5  ms-2">Login</button>
+                  </NavLink>
+                  <NavLink to="/register">
+                    <button className="btn btn-danger px-4 fs-5 ms-2">Register</button>
+                  </NavLink>
+                </div>
+              )}
+
+              <NavLink className="text-decoration-none fs-5 text-dark mt-2 ms-4" to="/">
+                <img style={{ width: "40px", borderRadius: "50%" }} src={user?.photoURL} alt="" /> {user?.displayName}
               </NavLink>
             </Nav>
           </Navbar.Collapse>
