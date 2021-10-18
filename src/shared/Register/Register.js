@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useFirebase from "../../hooks/useFirebase";
+import useAuth from "../../hooks/useAuth";
 import googleIcon from "../../images/google-g-2015.svg";
 import "./Register.css";
 
 const Register = () => {
-  const { signInGoogle, handleRegister } = useFirebase();
+  const { signInGoogle, handleRegister } = useAuth();
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
     e.preventDefault();

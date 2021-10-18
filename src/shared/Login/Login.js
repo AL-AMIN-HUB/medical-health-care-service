@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useFirebase from "../../hooks/useFirebase";
+import useAuth from "../../hooks/useAuth";
 import googleIcon from "../../images/google-g-2015.svg";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signInGoogle, handleLogin } = useFirebase();
+  const { signInGoogle, handleLogin } = useAuth();
 
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {

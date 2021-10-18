@@ -34,7 +34,7 @@ const useFirebase = () => {
       }
     });
     return () => unsubscribed;
-  }, []);
+  }, [auth]);
 
   const handleRegister = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
