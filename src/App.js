@@ -52,7 +52,9 @@ function App() {
               <NotFoundError></NotFoundError>
             </Route>
           </Switch>
-          <Footer></Footer>
+          <div id="home">
+            <Footer></Footer>
+          </div>
         </Router>
       </AuthProvider>
     </div>

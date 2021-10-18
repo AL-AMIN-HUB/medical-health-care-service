@@ -54,3 +54,14 @@
   border-bottom: 3px solid #e12555;
   border-radius: 5px;
 }
+
+#home {
+  overflow-x: hidden;
+}
+
+.footer-ul {
+  color: lightgray;
+}
+.footer-ul li {
+  list-style-type: none;
+}
