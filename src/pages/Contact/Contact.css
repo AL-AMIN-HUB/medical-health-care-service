@@ -1,0 +1,31 @@
+.contact {
+  background-image: url(https://oilytheme.net/demo-html/2021/003/hounlare/assets/img/hero/hero-03.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact h2 {
+  color: #233746;
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+@media only screen and (max-width: 668px) {
+  .contact h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
+}
+
+.bg-input {
+  background-color: #f1f1f1;
+  
+}
