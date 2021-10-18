@@ -13,7 +13,7 @@ const Service = (props) => {
             <Card.Title>{name}</Card.Title>
             <Card.Text>{desc.slice(0, 80)}...</Card.Text>
           </Card.Body>
-          <Button className="btn button-active-color border-0 w-50 mx-auto fs-4 py-2  rounded-pill btn-hover">
+          <Button className="btn button-active-color border-0 w-50 mx-auto fs-5 py-2  rounded-pill btn-hover">
             <Link className="text-decoration-none text-white" to={`/serviceDetails/${id}`}>
               {" "}
               View Details

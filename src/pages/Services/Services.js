@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 import Service from "../Service/Service";
+import ServicePro from "../ServicePro/ServicePro";
 import "./Services.css";
 
 const Services = () => {
@@ -12,22 +13,25 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="services-bg py-5">
-      <div className="text-center service-title">
-        <h5 className="text-custom-primary my-5">Our Services</h5>
-        <h3 className="text-custom-secondary">Medcity professional services</h3>
-        <p className="text-muted">
-          Why Medcity services is best all time since 1990. desires to obtain of itself, because it is pain, <br /> but because occasionally
-          circumstance procure him some great deals.
-        </p>
-      </div>
+    <div>
+      <ServicePro></ServicePro>
+      <div className="services-bg py-5">
+        <div className="text-center service-title">
+          <h5 className="text-custom-primary my-5">Our Services</h5>
+          <h3 className="text-custom-secondary">Medcity professional services</h3>
+          <p className="text-muted">
+            Why Medcity services is best all time since 1990. desires to obtain of itself, because it is pain, <br /> but because occasionally
+            circumstance procure him some great deals.
+          </p>
+        </div>
 
-      <div>
-        <Row xs={1} sm={1} md={3} className="g-4 w-75 mx-auto mt-5">
-          {services.map((service) => (
-            <Service key={service.id} service={service}></Service>
-          ))}
-        </Row>
+        <div>
+          <Row xs={1} sm={1} md={3} className="g-4 w-75 mx-auto mt-5">
+            {services.map((service) => (
+              <Service key={service.id} service={service}></Service>
+            ))}
+          </Row>
+        </div>
       </div>
     </div>
   );
