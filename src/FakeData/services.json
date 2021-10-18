@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Dental Care",
+    "desc": "Popcorn is a healthy snack alternative to chips but there are a few reasons why it can be very hard on your teeth. We typically enjoy popcorn during a long movie which gives bacteria more time to damage your teeth while you watch. Plus, it’s virtually impossible to eat popcorn without getting it stuck in between your teeth. Be prepared with a toothpick and some water or a good floss after you’re done eating.",
+    "image": "https://i.ibb.co/hKDQcnL/service-01.jpg"
+  },
+  {
+    "id": 2,
+    "name": " Emergency Care",
+    "desc": "Refined carbs typically include most of young children’s favorite foods such as white bread, crackers, chips or french fries. These are all simple carbs that break down into sugars. Once these sugars mix in with the bacteria in the mouth, they ferment and create lactic acid which is very efficient at eroding tooth enamel.",
+    "image": "https://i.ibb.co/R2Tpk8j/service-02.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Old Care",
+    "desc": "wholesome, nutritious snacks which are better for teeth than candy. But the sugars found in these fruits are highly concentrated due to drying them out. Plus, their chewy texture makes them prone to stick to teeth, giving the bacteria extra time to cause damage.",
+    "image": "https://i.ibb.co/qgyQMjn/service-03.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Baby Care",
+    "desc": "All soft drinks, whether they contain sugar or not, will have acid. This can damage your teeth which can lead to increased cavities and dental erosion. Try to avoid soft drinks if you want to keep your teeth healthier. Stick to unsweetened tea or water as a replacement. If you need to drink a soft drink, avoid brushing your teeth immediately after since the acid softens your tooth enamel making them more vulnerable to abrasion.",
+    "image": "https://i.ibb.co/TBPxgWT/service-04.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mental Healthcare",
+    "desc": "Pickled foods use vinegar which contains acid, and is important for the pickling process. This acid can cause staining as well as erosion of your tooth enamel. Many pickled foods contain sugar which also contributes to cavities.",
+    "image": "https://i.ibb.co/MBMtyP3/service-05.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Hospice Care",
+    "desc": "Both white and red wine contain erosive acid, which works to soften the enamel. Red wine also contains compounds known as tannins, which dry out your mouth and stain your teeth. If you know you are going to drink wine, brush your teeth beforehand to help reduce the amount of plaque that the wine can stick to. You should also wait 30 mins after drinking wine to brush your teeth to avoid brushing the wine into your teeth.",
+    "image": "https://i.ibb.co/3CpMyvf/service-06.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Urgent Care",
+    "desc": "Citrus fruits can be an important part of any healthy diet, but when you eat a lot of them on their own the citric acid in the fruit can wear away at your tooth enamel, which leaves your teeth vulnerable to cavities. Lemons, limes and grapefruit are especially highly acidic. When you are drinking juices, try using a straw so that some of the acid bypasses your teeth.",
+    "image": "https://i.ibb.co/DLC12dh/service-07.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Home Care",
+    "desc": "Tomatoes are a healthy source of vitamins but they are acidic. When you eat pasta with red sauce, it can do double the damage to your enamel because the acid in the sauce breaks down your teeth and the pasta’s carbohydrates help feed bacteria that cause cavities.",
+    "image": "https://i.ibb.co/kV72BYs/service-08.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Volunteer care",
+    "desc": "Hard candies linger in your mouth for a while as you wait for them to dissolve. It can take around ten minutes for some hard candies to dissolve and there are no health benefits to eating candy. Because the sugary treat spends so much time in your mouth it gives the bacteria lots of time to do some serious damage. Hard candy also has the potential to crack teeth and cause cuts on the inside of your mouth.",
+    "image": "https://i.ibb.co/D1bc85W/service-09.jpg"
+  }
+]
