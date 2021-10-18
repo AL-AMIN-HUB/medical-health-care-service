@@ -8,7 +8,9 @@ import Home from "./pages/Home/Home";
 import Menubar from "./pages/Menubar/Menubar";
 import NotFoundError from "./pages/NotFoundError/NotFoundError";
 import Pricing from "./pages/Pricing/Pricing";
+import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 import Services from "./pages/Services/Services";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Login from "./shared/Login/Login";
 import Register from "./shared/Register/Register";
 
@@ -43,6 +45,9 @@ function App() {
             <Route exact path="/pricing">
               <Pricing></Pricing>
             </Route>
+            <PrivateRoute exact path="/serviceDetails/:id">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path="*">
               <NotFoundError></NotFoundError>
             </Route>

@@ -16,6 +16,7 @@ const Login = () => {
   };
 
   //
+
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -27,7 +28,7 @@ const Login = () => {
   };
   return (
     <div style={{ height: "100vh" }} className="service-provider-bg position-relative">
-      <div style={{ width: "500px" }} className="bg-white login shadow p-4 mx-auto py-5 text-center">
+      <div style={{ width: "480px" }} className="bg-white login shadow p-4 mx-auto py-5 text-center">
         <img
           style={{ width: "100px" }}
           className="img-fluid"
@@ -57,7 +58,7 @@ const Login = () => {
           </Button>
 
           <p className="mt-3">
-            create a new account?{" "}
+            Create a new account?{" "}
             <Link className="text-decoration-none mt-3" to="/register">
               {" "}
               Register

@@ -13,6 +13,8 @@ import initializeAuthentication from "../Firebase/Firebase.init";
 initializeAuthentication();
 
 const useFirebase = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
   const auth = getAuth();
@@ -34,7 +36,7 @@ const useFirebase = () => {
       }
     });
     return () => unsubscribed;
-  }, [auth]);
+  }, []);
 
   const handleRegister = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
@@ -63,6 +65,10 @@ const useFirebase = () => {
     logOut,
     handleRegister,
     handleLogin,
+    email,
+    setEmail,
+    password,
+    setPassword,
   };
 };
 

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
@@ -6,13 +5,11 @@ import googleIcon from "../../images/google-g-2015.svg";
 import "./Register.css";
 
 const Register = () => {
-  const { signInGoogle, handleRegister } = useAuth();
+  const { signInGoogle, handleRegister, setEmail, setPassword, email, password } = useAuth();
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   const handleName = (e) => {
     console.log(e.target.value);
@@ -28,7 +25,9 @@ const Register = () => {
   };
   return (
     <div style={{ height: "100vh" }} className=" simple-white-bg position-relative">
-      <div style={{ width: "500px" }} className=" register bg-white shadow p-4 mx-auto py-5 text-center">
+      <div style={{ width: "480px" }} className=" register bg-white shadow p-4 mx-auto py-5 text-center">
+        <h4>Welcome to Medcity Health Service</h4>
+
         <img
           style={{ width: "100px" }}
           className="img-fluid"
@@ -41,7 +40,7 @@ const Register = () => {
               Name:
             </Form.Label>
             <Col sm="9">
-              <Form.Control onChange={handleName} placeholder="Type Your Name" />
+              <Form.Control onBlur={handleName} placeholder="Type Your Name" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
@@ -66,7 +65,7 @@ const Register = () => {
           </Button>
 
           <p className="mt-3">
-            already have an account?{" "}
+            Already have an account?{" "}
             <Link className="text-decoration-none" to="/login">
               {" "}
               Log in
