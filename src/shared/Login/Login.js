@@ -8,7 +8,7 @@ import "./Login.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signInGoogle, handleLogin } = useAuth();
+  const { signInGoogle, handleLogin, error } = useAuth();
 
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
@@ -52,6 +52,7 @@ const Login = () => {
               <Form.Control required onChange={handlePassword} type="password" placeholder="Password" />
             </Col>
           </Form.Group>
+          <p>{error}</p>
 
           <Button onClick={continueLogin} className=" border-0 fs-5 px-3 w-100" type="submit">
             Continue

@@ -5,7 +5,7 @@ import googleIcon from "../../images/google-g-2015.svg";
 import "./Register.css";
 
 const Register = () => {
-  const { signInGoogle, handleRegister, setEmail, setPassword, email, password } = useAuth();
+  const { signInGoogle, handleRegister, setEmail, setPassword, email, password, error } = useAuth();
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,7 +40,7 @@ const Register = () => {
               Name:
             </Form.Label>
             <Col sm="9">
-              <Form.Control required  onBlur={handleName} placeholder="Type Your Name" />
+              <Form.Control required onBlur={handleName} placeholder="Type Your Name" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
@@ -48,7 +48,7 @@ const Register = () => {
               Email:
             </Form.Label>
             <Col sm="9">
-              <Form.Control  required onChange={handleEmail} placeholder="Enter your email" />
+              <Form.Control required onChange={handleEmail} placeholder="Enter your email" />
             </Col>
           </Form.Group>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -59,7 +59,7 @@ const Register = () => {
               <Form.Control required onChange={handlePassword} type="password" placeholder="Password" />
             </Col>
           </Form.Group>
-
+          <p>{error}</p>
           <Button onClick={continueSubmit} className="button-active-color border-0 fs-5 px-3 w-100" type="submit">
             Continue
           </Button>
