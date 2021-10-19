@@ -10,8 +10,8 @@ import { Button } from "react-bootstrap";
 
 const Blog = () => {
   return (
-    <div>
-      <div className="pt-5">
+    <div className="blog-section">
+      <div className="py-5">
         <div className="text-center text-white blog">
           <div className="pt-5">
             <h5>From Blog</h5>

@@ -6,9 +6,14 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.blog-section {
+  background-color: #edfbfa75;
+  padding-bottom: 5rem;
+}
 
 .row-blog {
   padding: 10rem 5rem;
+  background-color: #fff;
 }
 
 .btn-blog {

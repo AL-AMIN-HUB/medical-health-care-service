@@ -1,0 +1,9 @@
+.doctor-row {
+  padding: 10rem 0;
+}
+
+@media only screen and (max-width: 668px) {
+  .doctor-row {
+    padding: 3rem 0;
+  }
+}
