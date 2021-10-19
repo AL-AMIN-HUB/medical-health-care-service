@@ -1,0 +1,10 @@
+.card-price:hover {
+  transition: 0.5s;
+  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.5);
+  background-color: #ffbed31f;
+}
+
+.btn-custom-bg {
+  background-color: #fff;
+  color: #e12454;
+}

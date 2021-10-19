@@ -34,7 +34,7 @@ const Menubar = () => {
             </Nav>
             <Nav>
               {user?.email ? (
-                <NavLink to="/login">
+                <NavLink to="/home">
                   <button onClick={logOut} className="btn btn-outline-dark px-4 fs-5  ms-2">
                     Logout
                   </button>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Details = (props) => {
   const { name, image, desc } = props.details;
@@ -15,7 +16,10 @@ const Details = (props) => {
         <img className="img-fluid" src={image} alt="" />
         <h4 className="mt-3">Service: {name}</h4>
         <p style={{ textAlign: "justify" }} className="lead">
-          {desc}
+          {desc} <span className="text-muted">Do you want to know more about this services?</span>{" "}
+          <Link className="text-decoration-none" to="/contact">
+            Clicked here
+          </Link>
         </p>
       </div>
 

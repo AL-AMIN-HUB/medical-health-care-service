@@ -7,33 +7,31 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* all button style */
 .button-active-color {
   background-color: #e12555;
 }
-
-.text-custom-primary {
-  color: #e12555;
-}
-
 .button-hover-color {
   background-color: #233746;
 }
 
+/* some text custom color style */
+.text-custom-primary {
+  color: #e12555;
+}
 .text-custom-secondary {
   color: #233746;
 }
+
+/* some bg and text opacity control style */
 .bgColor-opacity {
   background-color: #ffd9db;
 }
-
 .txColor-opacity {
   color: #ffd9db;
 }
 
-.footer-bg {
-  background-color: #0e3340;
-}
-
+/* service and service details styles here */
 .service-provider-bg {
   background-color: #e6f1f7;
 }
@@ -59,9 +57,19 @@
   overflow-x: hidden;
 }
 
+/* footer styles */
+.footer-bg {
+  background-color: #0e3340;
+}
 .footer-ul {
   color: lightgray;
 }
 .footer-ul li {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 668px) {
+  .footer-copyright-text {
+    font-size: 16px;
+  }
 }

@@ -92,7 +92,7 @@ const Footer = () => {
           <i class="fab fa-linkedin-in text-muted ms-4 fs-4"></i>
         </div>
         <div className="text-muted">
-          <h5>
+          <h5 className="footer-copyright-text">
             &copy; 2021 by <span className="text-custom-primary">Assign10</span> alright reserved by Al Amin
           </h5>
         </div>
