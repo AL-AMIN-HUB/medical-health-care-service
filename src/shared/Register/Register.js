@@ -1,11 +1,22 @@
 import { Col, Form, Row, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import googleIcon from "../../images/google-g-2015.svg";
 import "./Register.css";
 
 const Register = () => {
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from || "/services";
   const { signInGoogle, handleRegister, setEmail, setPassword, email, password, error } = useAuth();
+
+  // redirect page after login
+
+  const handleGoogleLogIn = () => {
+    signInGoogle().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -73,7 +84,7 @@ const Register = () => {
           </p>
 
           <h5 className="my-3">OR</h5>
-          <Button onClick={signInGoogle} className=" border-0 fs-5 px-3 w-100" type="submit">
+          <Button onClick={handleGoogleLogIn} className=" border-0 fs-5 px-3 w-100" type="submit">
             <img style={{ width: "40px" }} src={googleIcon} className="img-fluid" alt="" /> Continue With Google
           </Button>
         </Form>
