@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import googleIcon from "../../images/google-g-2015.svg";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signInGoogle, handleLogin, error } = useAuth();
+  const { handleLogin, error } = useAuth();
 
   // onsubmit handle refresh webpage
   const handleSubmit = (e) => {
@@ -65,11 +64,6 @@ const Login = () => {
               Register
             </Link>
           </p>
-
-          <h5 className="my-3">OR</h5>
-          <Button onClick={signInGoogle} className="button-active-color border-0 fs-5 px-3 w-100" type="submit">
-            <img style={{ width: "40px" }} src={googleIcon} className="img-fluid" alt="" /> Continue With Google
-          </Button>
         </Form>
       </div>
     </div>
