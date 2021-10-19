@@ -2,7 +2,7 @@
 
 This project is fully responsive, please visit the live site [Medcity healthCare Service](https://medical-health-care-service.web.app/).
 
-# MedCity Healthcare
+## MedCity Healthcare
 
 We're on the path towards a healthcare system that values connected health, but how do we get there faster? Dr. Joseph Kvedar, VP of Connected Health at Partners Healthcare, talks about where there's room for improvement, and how current trends, like the rise of wearables, affect the field of connected health. Happy Healthcare people...
 
