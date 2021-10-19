@@ -8,7 +8,9 @@ const Service = (props) => {
     <div>
       <Col>
         <Card className="h-100 pb-4">
-          <Card.Img variant="top" className="img-fluid" src={image} />
+          <div className="blog-img-div">
+            <Card.Img variant="top" className="img-fluid blog-img" src={image} />
+          </div>
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text>{desc.slice(0, 80)}...</Card.Text>
