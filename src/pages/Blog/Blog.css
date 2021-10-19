@@ -1,0 +1,33 @@
+.blog {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://oilytheme.net/demo-html/2021/003/hounlare/assets/img/background/bg-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.row-blog {
+  padding: 10rem 5rem;
+}
+
+.btn-blog {
+  width: 500px;
+}
+.blog-img-div {
+  overflow: hidden;
+}
+.blog-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.blog-text:hover {
+  color: #e12454;
+  transition: 0.3s;
+}
+@media screen and (max-width: 668px) {
+  .row-blog {
+    padding: 2rem;
+  }
+}
