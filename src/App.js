@@ -39,9 +39,9 @@ function App() {
             <Route exact path="/register">
               <Register></Register>
             </Route>{" "}
-            <Route exact path="/contact">
+            <PrivateRoute exact path="/contact">
               <Contact></Contact>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/pricing">
               <Pricing></Pricing>
             </Route>
