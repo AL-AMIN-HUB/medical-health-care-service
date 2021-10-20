@@ -1,7 +1,12 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Details = (props) => {
+  // animation
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const { name, image, desc } = props.details;
   return (
     <div className="row container mx-auto my-5">
@@ -23,7 +28,7 @@ const Details = (props) => {
         </p>
       </div>
 
-      <div className="col-md-4 col-12  h-75 work-card work-bg shadow-sm p-0">
+      <div data-Aos="fade-left" className="col-md-4 col-12  h-75 work-card work-bg shadow-sm p-0">
         <h3 className="button-active-color m-0 p-3 fs-2 text-white">Recent Done Works</h3>
         <div className="d-flex ps-3 pt-3 align-items-center">
           <div className="me-3">

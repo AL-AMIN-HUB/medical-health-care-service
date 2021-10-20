@@ -1,13 +1,19 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { Card, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Service = (props) => {
+  // animation
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const { name, image, desc, id } = props.service;
   return (
     <div>
       <Col>
-        <Card className="h-100 pb-4">
+        <Card data-Aos="fade-up" className="h-100 pb-4">
           <div className="blog-img-div">
             <Card.Img variant="top" className="img-fluid blog-img" src={image} />
           </div>

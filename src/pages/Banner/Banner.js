@@ -1,6 +1,7 @@
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import banner1 from "../../images/banner1.jpg";
@@ -9,12 +10,16 @@ import banner3 from "../../images/banner3.jpg";
 import "./Banner.css";
 
 const Banner = () => {
+  // animation
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <Carousel fade>
         <Carousel.Item className="carousel-item">
           <img className="d-block w-100" src={banner1} alt="First slide" />
-          <Carousel.Caption className="banner-text">
+          <Carousel.Caption data-Aos="fade-right" className="banner-text">
             <h4>MEDICAL CENTER.</h4>
             <h2>
               Best <span>Medical &</span> <br /> Health Care Center.
