@@ -52,7 +52,13 @@ const Banner = () => {
           <img className="d-block w-100" src={banner2} alt="Second slide" />
 
           <Carousel.Caption className="banner-text">
-            <h4>MEDICAL CENTER.</h4>
+            <h4>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("MEDICAL CENTER.").start();
+                }}
+              />
+            </h4>
             <h2>
               Best <span>Medical &</span> <br /> Health Care Center.
             </h2>
@@ -75,7 +81,13 @@ const Banner = () => {
           <img className="d-block w-100" src={banner3} alt="Third slide" />
 
           <Carousel.Caption className="banner-text">
-            <h4>MEDICAL CENTER.</h4>
+            <h4>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("MEDICAL CENTER.").start();
+                }}
+              />
+            </h4>
             <h2>
               Best <span>Medical &</span> <br /> Health Care Center.
             </h2>
