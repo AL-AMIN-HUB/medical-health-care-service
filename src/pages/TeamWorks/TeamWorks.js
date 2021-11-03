@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 import "./TeamWorks.css";
 import { Card, Col, Row } from "react-bootstrap";
 import member1 from "../../images/service-01.jpg";
@@ -80,7 +81,9 @@ const TeamWorks = () => {
 
               <Card.Body>
                 <Card.Title>
-                  <h2 className="text-custom-secondary fs-1 fw-bold">175+</h2>
+                  <h2 className="text-custom-secondary fs-1 fw-bold">
+                    <CountUp duration={3} start={1} end={750} />+
+                  </h2>
                 </Card.Title>
                 <Card.Text>
                   <h5>Total Doctors</h5>
@@ -94,7 +97,9 @@ const TeamWorks = () => {
 
               <Card.Body>
                 <Card.Title>
-                  <h2 className="text-custom-secondary fs-1 fw-bold">20+</h2>
+                  <h2 className="text-custom-secondary fs-1 fw-bold">
+                    <CountUp duration={3} start={1} end={35} />+
+                  </h2>
                 </Card.Title>
                 <Card.Text>
                   <h5>Ambulance</h5>
@@ -108,7 +113,9 @@ const TeamWorks = () => {
 
               <Card.Body>
                 <Card.Title>
-                  <h2 className="text-custom-secondary fs-1 fw-bold">1280+</h2>
+                  <h2 className="text-custom-secondary fs-1 fw-bold">
+                    <CountUp duration={3} start={1} end={1280} />+
+                  </h2>
                 </Card.Title>
                 <Card.Text>
                   <h5>Total Beds</h5>
@@ -122,7 +129,9 @@ const TeamWorks = () => {
 
               <Card.Body>
                 <Card.Title>
-                  <h2 className="text-custom-secondary fs-1 fw-bold">1536+</h2>
+                  <h2 className="text-custom-secondary fs-1 fw-bold">
+                    <CountUp duration={3} start={1} end={1536} />+
+                  </h2>
                 </Card.Title>
                 <Card.Text>
                   <h5>Total Patients</h5>

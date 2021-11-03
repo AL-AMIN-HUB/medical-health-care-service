@@ -4,6 +4,7 @@ import Aos from "aos";
 import React, { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 import banner1 from "../../images/banner1.jpg";
 import banner2 from "../../images/banner2.jpg";
 import banner3 from "../../images/banner3.jpg";
@@ -14,13 +15,21 @@ const Banner = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
+  //
+
   return (
     <>
       <Carousel fade>
         <Carousel.Item className="carousel-item">
           <img className="d-block w-100" src={banner1} alt="First slide" />
           <Carousel.Caption data-Aos="fade-right" className="banner-text">
-            <h4>MEDICAL CENTER.</h4>
+            <h4>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("MEDICAL CENTER.").start();
+                }}
+              />
+            </h4>
             <h2>
               Best <span>Medical &</span> <br /> Health Care Center.
             </h2>
